@@ -10,7 +10,11 @@
         body {
             font-family: "Courier New", monospace;
             text-align: center;
-        }a
+            color:  #770044;
+        }
+        span.opt {
+            color:  #770044;
+        }
     </style>
 </head>
 
@@ -20,7 +24,7 @@
     <div id="header">
         <label name="brick_symbol">brick symbol</label>
         <select name="symbol">
-            <option value="#">#</option>
+            <option value="#"><span class="opt">#</span></option>
             <option value="@">@</option>
             <option value="X">X</option>
             <option value="$">$</option>
@@ -28,7 +32,7 @@
         <label name="how_many">How Many?</label>
         <input id="hS" name="heightSetter" type="range"
                 min="0" value="5" max="20" step="1" />
-        <label name="curr_height">5</label>
+        <label name="curr_height" style=" { color: #770044; }">5</label>
     </div>
 
     <div id="pyramid">

@@ -1,5 +1,5 @@
 var curr_symbol = "#"
-var curr_height = "1"
+var curr_height = "5"
 
 function adjust_slider(event) {
     // console.log("event = " + event.type);    
@@ -29,6 +29,9 @@ function my_main() {
 
     symbol = document.getElementsByName("symbol")[0];
     symbol.addEventListener('change', update_symbol);
+
+    // call manually to START things off
+    update_symbol(null);  // FIXME:  this is kinda hack-y
 }
 
 
