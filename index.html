@@ -7,6 +7,22 @@
             font-size: 30px;
         }
 
+        div.outer_frame {
+            margin: 50px;
+        }
+
+        div.header {
+            height: 90px;
+            background-color: #770044;
+            color: #DDDDDD;
+        }
+        
+        div.toolbar_header {
+            height: 60px;
+            background-color: #999999;
+            color: #000000;
+        }
+
         body {
             font-family: "Courier New", monospace;
             text-align: center;
@@ -20,8 +36,13 @@
 
 <body onload="my_main()">
 <body>
-    <h1>Pyramid Slide</h1>
-    <div id="header">
+  <div class="outer_frame">
+    <div class="header">
+        <br/>
+        <h1>Pyramid Slide</h1>
+        <br/>
+    </div>
+    <div id="toolbar_header">
         <label name="brick_symbol">Brick Symbol:</label>
         <select name="symbol">
             <option value="#">#</option>
@@ -39,6 +60,6 @@
     </div>
 
     <script src="pyramid-slide.js"></script>
-  
+  </div>  
 </body>
 </html>
