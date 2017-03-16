@@ -5,10 +5,19 @@
         #pyramid {
             line-height: 0;
             font-size: 30px;
+            padding-bottom: 20px;
         }
 
-        div.outer_frame {
-            margin: 50px;
+        div.super_frame {
+            margin: 100px;
+        }
+
+        div.inset_frame {
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 90%;
+            background-color: #EEEEEE;
         }
 
         div.header {
@@ -18,8 +27,8 @@
         }
         
         div.toolbar_header {
-            height: 60px;
-            background-color: #999999;
+            height: 50px;
+            background-color: #CCCCCC;
             color: #000000;
         }
 
@@ -28,21 +37,20 @@
             text-align: center;
             color:  #770044;
         }
-        span.opt {
-            color:  #770044;
-        }
     </style>
 </head>
 
 <body onload="my_main()">
 <body>
-  <div class="outer_frame">
+   <div class="super_frame">
     <div class="header">
         <br/>
         <h1>Pyramid Slide</h1>
         <br/>
     </div>
-    <div id="toolbar_header">
+     <div class="inset_frame">
+      <div class="toolbar_header">
+        <br/>
         <label name="brick_symbol">Brick Symbol:</label>
         <select name="symbol">
             <option value="#">#</option>
@@ -54,12 +62,13 @@
         <input id="hS" name="heightSetter" type="range"
                 min="0" value="5" max="20" step="1" />
         <b><label name="curr_height" style=" { color: #770044; }">5</label></b>
-    </div>
+        <br/>
+      </div>
+      <div id="pyramid">
+      </div>
+     </div>
+   </div>     
 
-    <div id="pyramid">
-    </div>
-
-    <script src="pyramid-slide.js"></script>
-  </div>  
+   <script src="pyramid-slide.js"></script>
 </body>
 </html>
